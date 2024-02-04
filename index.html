@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>PACIFIC</title>
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960" width="28"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="#"><span style="color: hsl(18, 100%, 50%); font-size:xx-large; font-weight: bolder;">P</span>
+                            <span style="color: hsl(36, 100%, 50%); font-size:xx-large; font-weight: bolder;">A</span>
+                            <span style="color: hsl(60, 100%, 50%); font-size:xx-large; font-weight: bolder;">C</span>
+                            <span style="color: hsl(116, 100%, 30%); font-size:xx-large; font-weight: bolder;">I</span>
+                            <span style="color: hsl(212, 98%, 80%); font-size:xx-large; font-weight: bolder;">F</span>
+                            <span style="color: hsl(222, 98%, 36%); font-size:xx-large; font-weight: bolder;">I</span>
+                            <span style="color: hsl(280, 50%, 41%); font-size:xx-large; font-weight: bolder;">C</span>
+                </a>
+            </li>
+            <li class="hideonmobile"><a href="#">Blog</a></li>
+            <li class="hideonmobile"><a href="#">Products</a></li>
+            <li class="hideonmobile"><a href="#">About</a></li>
+            <li class="hideonmobile"><a href="#">Forum</a></li>
+            <li class="hideonmobile"><a href="#">Login</a></li>
+            <li class="menu-btn" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960" width="28"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+
+    </nav>
+
+    <div class="wrapper"> 
+        <main>
+            <div class="main-with-sidebar">
+                <div class="main-content">
+                    <img src="credit_card.jpg" class="card-img">
+                    <div class="main-content-two-card">
+                        <div class="card">
+                            <h1>The Bright Future Of Web 3.0</h1>
+                        </div>
+                        <div class="card">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, dolor non. Ipsam sunt quam quas 
+                                suscipit cum similique, sed reiciendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, 
+                                asperiores!</p>
+                            <button>Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <aside class="sidebar-2">                    
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi labore, quis esse quia ad totam voluptas repellat, culpa nihil itaque quo perferendis natus voluptatem aperiam? Doloremque inventore, fugiat nisi praesentium quam eos excepturi dicta dolorem explicabo necessitatibus cum vitae. Nulla qui soluta tempora. Totam expedita labore necessitatibus dolores ducimus natus nobis optio consequuntur repudiandae, voluptatibus cum repellendus omnis, laboriosam, nostrum a libero porro quos dolore culpa. Fugit, voluptatibus eligendi? Sapiente maxime, deserunt, cum soluta porro voluptatum eos alias nobis nemo ipsa, minima quos praesentium. Ea unde, ipsam officiis, doloremque facere et voluptate recusandae facilis explicabo laborum deleniti, minima harum in.</p>
+                </aside>
+            </div>
+
+            <div class="three-columns">
+                <div class="col">
+                    <div class="img-container">
+                        <img src="SBI-Logo.png" class="col-img">
+                    </div>
+                    <div class="card-content">
+                        <h2>01</h2>
+                        <h3>SBI Card</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nulla!</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="img-container">
+                        <img src="indusind.jpg" class="col-img">
+                    </div>
+                    <div class="card-content">
+                        <h2>02</h2>
+                        <h3>IndusInd Card</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nulla!</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="img-container">
+                        <img src="rbl.png" class="col-img">
+                    </div>
+                    <div class="card-content">
+                        <h2>03</h2>
+                        <h3>RBL Card</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nulla!</p>
+                    </div>
+                </div>                
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+
+    </script>
+    
+</body>
+</html>
